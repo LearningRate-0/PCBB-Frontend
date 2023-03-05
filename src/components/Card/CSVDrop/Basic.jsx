@@ -33,11 +33,11 @@ const rejectStyle = {
   borderColor: '#ff1744'
 };
 
-export default function Basic() {
+export default function Basic({setFile}) {
 
 
-  function nameLengthValidator(file) {
-    if (file.name.length > maxLength) {
+  function nameLengthValidator(tempfile) {
+    if (tempfile.name.length > maxLength) {
       return {
         code: "name-too-large",
         message: `Name is larger than ${maxLength} characters`
@@ -63,6 +63,10 @@ export default function Basic() {
     validator: nameLengthValidator,
     noClick: true,
     noKeyboard: true,
+    onDrop: (acceptedFiles)=>{
+      console.log(acceptedFiles[0])
+      setFile(acceptedFiles[0]);
+    }
     });
 
   const style = useMemo(() => ({
@@ -96,7 +100,7 @@ export default function Basic() {
     <div>
       <div className="box-wrapper" {...getRootProps({style})}>
         <img src={download} alt="download" className="download"/>
-        <input {...getInputProps()} />
+        <input id='file' {...getInputProps()} />
         <button className='selectCSV' type="button" onClick={open}>
           Select CSV File
         </button>

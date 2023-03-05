@@ -18,7 +18,7 @@ export default function SingleConsumer() {
                     <label htmlFor="uid">User ID</label>
                 </div>
                 <div className="col input-group">
-                    <input id="age" name="age" placeholder='Age'></input>
+                    <input id="age" name="age" type="number" placeholder='Age'></input>
                     <label htmlFor="age">Age</label>
                 </div>
                 <div className="col input-group">
