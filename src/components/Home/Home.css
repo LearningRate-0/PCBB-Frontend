@@ -1,0 +1,60 @@
+.Home-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2949px;
+    height: 1589px;
+    background-image: linear-gradient(#437fc7,#6daffe);
+    background-size: cover;
+    transform-origin: 0 0;
+    transform: rotate(-7deg) translate(-883px, -630px);
+    overflow: hidden;
+    z-index: -1;
+}
+.Home{
+    width: 100%;
+    text-align: center;
+    min-height: 780px;
+}
+.Home img{
+    /* max-width: 1080px; */
+    /* height: auto; */
+    margin-bottom: 30px;
+}
+
+.Home h1{
+    color: #fff;
+  font-size:59px;
+}
+.Home h3{
+    color: #fff;
+  font-size: 30px;
+}
+.custom-container{
+    width: 100vw;
+    overflow-x: hidden;
+    position: relative;
+    min-height: 100vh;
+}
+
+.get-started{
+    font-size: 30px;
+ border: none;
+    background: #2f2e41;
+    color: #fff;
+    padding: 15px 80px;
+    border-radius: 5px;
+    max-width: 50%;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 auto;
+}
+
+.get-started:hover{
+    background: #fff;
+    color: #2f2e41;
+}

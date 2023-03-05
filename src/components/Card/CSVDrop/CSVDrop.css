@@ -1,0 +1,16 @@
+.selectCSV{
+  background-color: #437fc7;
+  color: #fff;
+  border: none;
+  border-radius:  5px;
+  padding: 10px 20px;
+  font-size: 36px;
+}
+.dropItHere{
+  font-size:18px;
+}
+.box-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}

@@ -1,0 +1,100 @@
+#single{
+    text-align: center;
+}
+#single h1{
+    color: #437fc7;
+}
+#single h4{
+    text-align: center;
+    color: #6daffe;
+    cursor: pointer;
+}
+#single h4:active{
+    color: #b97324;
+}
+.inputColumn{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    padding:0 20px 20px; 
+    box-sizing:border-box;
+    gap:7px;
+}
+.input-group{
+    display:flex;
+    flex-direction:column-reverse;
+    width:100%;
+    box-sizing:border-box;
+    gap:7px;
+}
+.input-group input{
+    min-width:400px;
+    width:100%;
+    padding:10px;
+    box-sizing:border-box;
+    border:1px solid #ccc;
+    border-radius:5px;
+    outline:none;
+    font-size:14px;
+    font-weight:500;
+    color:#333;
+    text-align:left;
+    margin-bottom:5px;
+}
+
+.input-group label{
+    font-size:14px;
+    font-weight:500;
+    color: #a5a5a5;
+    text-align:left;
+    margin:5px;
+    transform:translateX(10px) translateY(45px);
+    transition:all 0.3s ease;
+    cursor:text;
+}
+
+.input-group input::placeholder{
+    color:transparent;
+}
+
+.input-group input:focus ~ label,
+.input-group input:not(:placeholder-shown) ~ label,
+.input-group input:-webkit-autofill ~ label{
+    transform:translateX(10px) translateY(5px);
+    font-size:12px;
+    font-weight:500;
+    color:#437fc7;
+    text-align:left;
+    margin:5px;
+    cursor: pointer;
+}
+
+.submit{
+    font-size: 18px;
+ border: none;
+    background: #2f2e41;
+    color: #fff;
+    padding: 5px;
+    width: 40%;
+    border-radius: 5px;
+    max-width: 50%;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 auto;
+}
+
+.submit:hover{
+    background: #437fc7;
+}
+.answer-box{
+    background: #edf6ff;
+    display: inline-block;
+    padding: 30px;
+    margin-top:20px;
+    color: #437fc7;
+    font-weight: 500;
+}
