@@ -19,7 +19,7 @@ export default function Home() {
           <div className="col">
             <div className="d-flex flex-column h-100 justify-content-center">
               <h1>Predict Consumer Behaviour</h1>
-              <h3>Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</h3>
+              <h3>Understand customer purchase behaviour against various products using our product.</h3>
               <button className="get-started" onClick={()=>clickHandler()}>Get Started!</button>
             </div>
           </div>

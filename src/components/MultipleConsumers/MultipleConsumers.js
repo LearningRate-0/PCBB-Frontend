@@ -69,6 +69,7 @@ export default function MultipleConsumers() {
                     <h1>Top categories according to their purchase values</h1>
                     <img alt="swarm_marital_status" className='img-fluid' src={`http://localhost:5000/${graphData.tree_map_topcat}`}></img>
                 </div>
+                <a className='btn btn-info' href={`http://localhost:5000/${graphData.output_file}`} download>Download</a>
             </div>
         </div>}
     </div>
