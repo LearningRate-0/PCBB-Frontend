@@ -16,20 +16,26 @@ export default function MultipleConsumers() {
         "swarm_marital_status": "temp/swarm1678000744.6221442924158_Marital_Status.png",
         "tree_map_topcat": "temp/tree_map1678000744.6221442924158_categories.png"
     })
-    const [show, setShow] = useState(false)
+    const [show, setShow] = useState(-1)
     async function uploadMultipleConsumers(){
         console.log('Uploading file: ', file);
         var formData = new FormData();
         formData.append('file', file);
+        setShow(0);
         await fetch('http://localhost:5000/predict', {
             method: 'POST',
             body: formData
         }).then((response)=>response.json())
         .then((data)=>{
             setGraphData(data);
-            setShow(true)
+            setShow(1)
             console.log(data);
-        });
+        })
+        .catch((error)=>{
+            console.log(error);
+            setShow(-1);
+        }
+        )
     }
     function scrollToSingle(){
         var single = document.querySelector("#single");
@@ -37,13 +43,14 @@ export default function MultipleConsumers() {
     }
   return (
     <div id="multiple">
-        <h1>Predict for a single customer</h1>
-        <h4 onClick={()=>scrollToSingle()}>Predict for multiple customers instead?</h4>
+        <h1>Predict for Multiple customers</h1>
+        <h4 onClick={()=>scrollToSingle()}>Predict for a single customers instead?</h4>
         <div className="w-75 mx-auto my-3">
             <Card component={<Basic setFile={setFile}></Basic>}></Card>
         </div>
         <button className="submit" onClick={()=>{uploadMultipleConsumers()}}>Calculate</button>
-        {show&&<div className="container">
+        {show===0&&<div class="loader mx-auto my-5"></div>}
+        {show===1&&<div className="container">
             <div className="row">
                 <div className="col-6">
                     <h1>Distribution of Purchase values according to duration of stay</h1>

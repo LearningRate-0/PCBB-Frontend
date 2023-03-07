@@ -48,42 +48,78 @@ export default function SingleConsumer() {
         <div className="container">
             <div className="row">
                 <div className="col col-4 input-group">
+                    <span className='text-muted'>
+                        UXXXXXXX
+                    </span>
                     <input onChange={(e)=>{handleInput(e)}} id="User_ID" name="User_ID" placeholder='User ID'></input>
                     <label htmlFor="User_ID">User ID</label>
                 </div>
                 <div className="col col-4 input-group">
+                    <span className='text-muted'>
+                        0-17,
+                        18-25,
+                        26-35,
+                        36-45,
+                        46-50,
+                        51-55,
+                        55+
+                    </span>
                     <input onChange={(e)=>{handleInput(e)}} id="Age" name="Age" placeholder='Age'></input>
                     <label htmlFor="Age">Age</label>
                 </div>
                 <div className="col col-4 input-group">
+                    <span className='text-muted'>
+                        PXXXXXXX
+                    </span>
                     <input onChange={(e)=>{handleInput(e)}} id="Product_ID" name="Product_ID" placeholder='Product ID'></input>
                     <label htmlFor="Product_ID">Product ID</label>
                 </div>
                 <div className="col col-4 input-group">
+                    <span className='text-muted'>
+                        M, F
+                    </span>
                     <input onChange={(e)=>{handleInput(e)}} id="Gender" name="Gender" placeholder='Gender'></input>
                     <label htmlFor="Gender">Gender</label>
                 </div>
                 <div className="col col-4 input-group">
+                    <span className='text-muted'>
+                        0 (unmarried), 1 (married)
+                    </span>
                     <input onChange={(e)=>{handleInput(e)}} id="Marital_Status" name="Marital_Status" placeholder='Marital Status'></input>
                     <label htmlFor="Marital_Status">Marital Status</label>
                 </div>
                 <div className="col col-4 input-group">
+                    <span className='text-muted'>
+                        1-20
+                    </span>
                     <input onChange={(e)=>{handleInput(e)}} id="Occupation" name="Occupation" placeholder='Occupation'></input>
                     <label htmlFor="Occupation">Occupation</label>
                 </div>
                 <div className="col col-4 input-group">
+                    <span className='text-muted'>
+                        0,1,2,3,4+
+                    </span>
                     <input onChange={(e)=>{handleInput(e)}} id="Stay_In_Current_City_Years" name="Stay_In_Current_City_Years" placeholder='Stay in Current City'></input>
                     <label htmlFor="Stay_In_Current_City_Years">Stay in Current City</label>
                 </div>
                 <div className="col col-4 input-group">
+                    <span className='text-muted'>
+                        1-20
+                    </span>
                     <input onChange={(e)=>{handleInput(e)}} id="Product_Category_1" name="Product_Category_1" placeholder='Product Category'></input>
                     <label htmlFor="Product_Category_1">Product Category 1</label>
                 </div>
                 <div className="col col-4 input-group">
+                    <span className='text-muted'>
+                        1-20
+                    </span>
                     <input onChange={(e)=>{handleInput(e)}} id="Product_Category_2" name="Product_Category_2" placeholder='Product Category'></input>
                     <label htmlFor="Product_Category_2">Product Category 2</label>
                 </div>
                 <div className="col col-4 input-group">
+                    <span className='text-muted'>
+                        1-20
+                    </span>
                     <input onChange={(e)=>{handleInput(e)}} id="Product_Category_3" name="Product_Category_3" placeholder='Product Category'></input>
                     <label htmlFor="Product_Category_3">Product Category 3</label>
                 </div>
